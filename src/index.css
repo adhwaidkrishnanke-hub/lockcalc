@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #ffd91f;
+}
+
+.lockcalc-page {
+  isolation: isolate;
+  background: #ffd91f;
+}
+
+.lockcalc-page::before,
+.lockcalc-page::after {
+  position: fixed;
+  z-index: -1;
+  content: '';
+  pointer-events: none;
+  border-radius: 999px;
+}
+
+.lockcalc-page::before {
+  width: 25rem;
+  height: 25rem;
+  left: -9rem;
+  top: 6rem;
+  background: #ff3f88;
+}
+
+.lockcalc-page::after {
+  width: 34rem;
+  height: 34rem;
+  right: -13rem;
+  bottom: -13rem;
+  background: #7552f4;
+}
+
+.lockcalc-device {
+  border: 4px solid #080808;
+  border-radius: 2.4rem;
+  background: #fffdf5;
+  box-shadow: 12px 16px 0 #080808, 0 24px 45px rgba(39, 21, 0, 0.2);
+}
+
+.lockcalc-screen {
+  border: 4px solid #080808;
+  border-radius: 1.8rem;
+  background: #f4f8e7;
+  box-shadow: inset 0 0 0 2px rgba(38, 65, 38, 0.08);
+}
+
+.lockcalc-screen [class*='text-white'] {
+  color: #080808 !important;
+}
+
+.lockcalc-key {
+  min-height: 66px;
+  border: 3px solid #080808;
+  border-radius: 1.1rem;
+  background: #fffdf5;
+  color: #080808;
+  box-shadow: 0 7px 0 #080808;
+  font-weight: 700;
+  transition: transform 75ms ease, box-shadow 75ms ease;
+}
+
+.lockcalc-key:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 0 #080808;
+}
+
+.lockcalc-key:focus-visible,
+button:focus-visible {
+  outline: 4px solid #7552f4;
+  outline-offset: 3px;
+}
+
+.lockcalc-key-clear,
+.lockcalc-key-equals {
+  background: #ff3f88;
+}
+
+.lockcalc-key-equals {
+  font-size: 1.25rem;
+}
+
+.lockcalc-key-operator {
+  background: #ffd91f;
+}
+
+.lockcalc-key-accent {
+  background: #a98bf5;
+}
+
+@media (max-width: 480px) {
+  .lockcalc-key {
+    min-height: 58px;
+  }
+
+  .lockcalc-device {
+    box-shadow: 7px 10px 0 #080808, 0 18px 30px rgba(39, 21, 0, 0.2);
+  }
+}
+
+.font-lcd {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.font-brand {
+  font-family: 'Orbitron', system-ui, sans-serif;
+}
+
+@keyframes cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes neon-pulse {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes unlock-reveal {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.96);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.unlock-reveal {
+  animation: unlock-reveal 1.2s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink,
+  .neon-pulse,
+  .unlock-reveal {
+    animation: none;
+  }
+}
