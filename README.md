@@ -139,8 +139,6 @@ Open the local URL shown in the terminal.
 [(https://drive.google.com/file/d/1_qURISCw9Z2vgH3YztP28Ntb-oDXRomR/view?usp=drive_link)]
 *the video shows evey think u need *
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 Vishnu KK: Project development, calculator logic, lock/unlock mechanism, UI implementation 
