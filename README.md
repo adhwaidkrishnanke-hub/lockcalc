@@ -95,14 +95,13 @@ npm run dev
 Open the local URL shown in the terminal.
 
 # Screenshots (Add at least 3)
-![<img width="1631" height="1137" alt="Screenshot 2026-09-12 050227" src="https://github.com/user-attachments/assets/fcec292e-f3aa-49c3-91c3-1a4b43840d91" />
-)
+![](<img width="675" height="670" alt="Screenshot 2026-09-12 063237" src="https://github.com/user-attachments/assets/96519dbd-9388-496e-a0fa-de3568d88124" />)
+
 *Add caption explaining what this shows*
 
-!<img width="1736" height="1132" alt="Screenshot 2026-09-12 050320" src="https://github.com/user-attachments/assets/24a2256b-c982-456c-bfcb-84871a7212fa" />
-Add caption explaining what this shows*
+![](<img width="733" height="653" alt="Screenshot 2026-09-12 063229" src="https://github.com/user-attachments/assets/f48d86bc-d773-46e5-96ba-92f03d3d9b6d" />)
 
-!<img width="1782" height="1140" alt="Screenshot 2026-09-12 050354" src="https://github.com/user-attachments/assets/94aef0d5-757e-4a26-976c-6710c7751009" />
+![](<img width="813" height="641" alt="Screenshot 2026-09-12 063212" src="https://github.com/user-attachments/assets/a7c58b7e-d736-46ef-ac18-337ca2547d4f" />)
 
 *Add caption explaining what this shows*
 
